@@ -45,14 +45,14 @@ public class App {
         System.out.println("error" + e.getMessage());
       }
     
-    } 
-                     public static float convertirMetrosAKilometros(float metros) {
-                        return metros / 1000;
-   }
+     } 
+      public static float convertirMetrosAKilometros(float metros) {
+            return metros / 1000;
+    }
 
-                     public static float calcularConsumoGasolina(float kmRecorrido) {
-                      return ((kmRecorrido * 55) / 750);
-  }
+       public static float calcularConsumoGasolina(float kmRecorrido) {
+            return ((kmRecorrido * 55) / 750);
+   }
     
 }
 
