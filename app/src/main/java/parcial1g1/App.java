@@ -6,7 +6,6 @@ public class App {
    public static void main(String[] args) {
          try {
     
-  
          Scanner scanner = new Scanner(System.in);
          float totalCombustible = 0;
 
@@ -35,27 +34,25 @@ public class App {
                 System.out.println("  Combustible consumido: " + String.format("%.2f", combustible) + " litros");
 
                   totalCombustible += combustible;
-        }
+         }
 
             System.out.println("\nTotal de combustible consumido por todos los vehículos: " + String.format("%.2f", totalCombustible) + " litros");
                 scanner.close();
         
-    } 
-
+       } 
 
        catch (Exception e) {
         System.out.println("error" + e.getMessage());
-        }
+      }
     
-      } 
-    public static float convertirMetrosAKilometros(float metros) {
-        return metros / 1000;
-     }
+    } 
+                     public static float convertirMetrosAKilometros(float metros) {
+                        return metros / 1000;
+   }
 
-    public static float calcularConsumoGasolina(float kmRecorrido) {
-        return ((kmRecorrido * 55) / 750);
-    
-    }
+                     public static float calcularConsumoGasolina(float kmRecorrido) {
+                      return ((kmRecorrido * 55) / 750);
+  }
     
 }
 
